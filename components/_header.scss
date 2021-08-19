@@ -1,0 +1,9 @@
+.header{
+    background-color: $principal;
+    height: 150px;
+}
+
+.boxTour{
+    @include boxTour(2px);
+    border: 1px solid black;
+}
