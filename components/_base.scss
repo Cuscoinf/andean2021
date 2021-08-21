@@ -10,11 +10,18 @@ a{
         text-decoration: none;
     }
 }
-
-$col: 1%;
-
-@for $var from 1 to 12 {
-    .col-#{$var}{
-        width: $var*10*$col;
-    }
+/*DEFINIR CONTENEDORES*/
+.fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+.pdlados-40{
+    padding: 0px 40px;
 }
+
+

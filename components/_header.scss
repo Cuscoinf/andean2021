@@ -1,9 +1,41 @@
 .header{
-    background-color: $principal;
-    height: 150px;
-}
+    background-color: $backgroundSecundario;
+    .banner-andean{
+        background-color: $backgroundPrincipal;
+        text-align: center;
+        font-family: $fontCita;
+        text-decoration: underline;
+        padding: $pdmedio;
+        a{
+            color: #000;
+            font-size: 14px;
+        }
+    }
+    .menu-andean{
+        background-color: $backgroundSecundario;
+        .logo-andean{
+            display: block;
+            height: 70px;
+            overflow: hidden;
+            margin-top: 26px;
+        }
+        .contact-menu-andean{
+            display: flex;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 12px;
+            margin-top: 25px;
+            text-transform: none;
+            text-align: right;
+        }
+            .pdleft{
+                padding-left: $pdleft;
+            }
 
-.boxTour{
-    @include boxTour(2px);
-    border: 1px solid black;
+    }
+    
 }

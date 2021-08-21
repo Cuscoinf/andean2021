@@ -1,6 +1,28 @@
-@mixin boxTour($borderRound:0px) {
-    width: 100px;
-    height: 200px;
-    padding: 10px;
-    border-radius: $borderRound;
+$grid-md: 768;
+$grid-lg: 992;
+$grid-col: 12;
+
+$map-grid-props: ('-sm': 0, '-md': $grid-md, '-lg': $grid-lg);
+
+@mixin create-mq($breakpoint) {
+  @if($breakpoint == 0) {
+    @content;
+  } @else {
+    @media screen and (min-width: $breakpoint *1px) {
+      @content;
+    }
+  }
 }
+
+@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+  @include create-mq($breakpoint) {
+    @for $i from 1 through $grid-cols {
+      .col#{$modifier}-#{$i} {
+        flex-basis: (100 / ($grid-cols / $i) ) * 1%;
+      }
+    }
+  }
+}
+@each $modifier , $breakpoint in $map-grid-props {
+    @include create-col-classes($modifier, $grid-col, $breakpoint);
+  }

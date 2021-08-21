@@ -11,59 +11,200 @@ a:hover {
   text-decoration: none;
 }
 
-.col-1 {
-  width: 10%;
+/*DEFINIR CONTENEDORES*/
+.fluid {
+  margin: 0;
+  max-width: 100%;
 }
 
-.col-2 {
-  width: 20%;
-}
-
-.col-3 {
-  width: 30%;
-}
-
-.col-4 {
-  width: 40%;
-}
-
-.col-5 {
-  width: 50%;
-}
-
-.col-6 {
-  width: 60%;
-}
-
-.col-7 {
-  width: 70%;
-}
-
-.col-8 {
-  width: 80%;
-}
-
-.col-9 {
-  width: 90%;
-}
-
-.col-10 {
+.row {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-.col-11 {
-  width: 110%;
+.pdlados-40 {
+  padding: 0px 40px;
 }
 
+.col-sm-1 {
+  flex-basis: 8.3333333333%;
+}
+
+.col-sm-2 {
+  flex-basis: 16.6666666667%;
+}
+
+.col-sm-3 {
+  flex-basis: 25%;
+}
+
+.col-sm-4 {
+  flex-basis: 33.3333333333%;
+}
+
+.col-sm-5 {
+  flex-basis: 41.6666666667%;
+}
+
+.col-sm-6 {
+  flex-basis: 50%;
+}
+
+.col-sm-7 {
+  flex-basis: 58.3333333333%;
+}
+
+.col-sm-8 {
+  flex-basis: 66.6666666667%;
+}
+
+.col-sm-9 {
+  flex-basis: 75%;
+}
+
+.col-sm-10 {
+  flex-basis: 83.3333333333%;
+}
+
+.col-sm-11 {
+  flex-basis: 91.6666666667%;
+}
+
+.col-sm-12 {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .col-md-1 {
+    flex-basis: 8.3333333333%;
+  }
+
+  .col-md-2 {
+    flex-basis: 16.6666666667%;
+  }
+
+  .col-md-3 {
+    flex-basis: 25%;
+  }
+
+  .col-md-4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .col-md-5 {
+    flex-basis: 41.6666666667%;
+  }
+
+  .col-md-6 {
+    flex-basis: 50%;
+  }
+
+  .col-md-7 {
+    flex-basis: 58.3333333333%;
+  }
+
+  .col-md-8 {
+    flex-basis: 66.6666666667%;
+  }
+
+  .col-md-9 {
+    flex-basis: 75%;
+  }
+
+  .col-md-10 {
+    flex-basis: 83.3333333333%;
+  }
+
+  .col-md-11 {
+    flex-basis: 91.6666666667%;
+  }
+
+  .col-md-12 {
+    flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col-lg-1 {
+    flex-basis: 8.3333333333%;
+  }
+
+  .col-lg-2 {
+    flex-basis: 16.6666666667%;
+  }
+
+  .col-lg-3 {
+    flex-basis: 25%;
+  }
+
+  .col-lg-4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .col-lg-5 {
+    flex-basis: 41.6666666667%;
+  }
+
+  .col-lg-6 {
+    flex-basis: 50%;
+  }
+
+  .col-lg-7 {
+    flex-basis: 58.3333333333%;
+  }
+
+  .col-lg-8 {
+    flex-basis: 66.6666666667%;
+  }
+
+  .col-lg-9 {
+    flex-basis: 75%;
+  }
+
+  .col-lg-10 {
+    flex-basis: 83.3333333333%;
+  }
+
+  .col-lg-11 {
+    flex-basis: 91.6666666667%;
+  }
+
+  .col-lg-12 {
+    flex-basis: 100%;
+  }
+}
 .header {
-  background-color: blue;
-  height: 150px;
+  background-color: white;
 }
-
-.boxTour {
-  width: 100px;
-  height: 200px;
-  padding: 10px;
-  border-radius: 2px;
-  border: 1px solid black;
+.header .banner-andean {
+  background-color: #ffcc00;
+  text-align: center;
+  font-family: "Geograph Edit", "GeoEditRegular", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+  padding: 15px 30px;
+}
+.header .banner-andean a {
+  color: #000;
+  font-size: 14px;
+}
+.header .menu-andean {
+  background-color: white;
+}
+.header .menu-andean .logo-andean {
+  display: block;
+  height: 70px;
+  overflow: hidden;
+  margin-top: 26px;
+}
+.header .menu-andean .contact-menu-andean {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 25px;
+  text-transform: none;
+  text-align: right;
+}
+.header .menu-andean .pdleft {
+  padding-left: 30px;
 }
