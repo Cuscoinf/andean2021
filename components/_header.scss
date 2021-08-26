@@ -18,6 +18,20 @@
             height: 70px;
             overflow: hidden;
             margin-top: 26px;
+            @include breakpoint(768){
+                margin-top: 15px;
+                height: 45px;
+            }
+        }
+        .andean-serach-book{
+            @include breakpoint(768){
+                display: none;
+            }
+        }
+        .pdlados-40{
+            @include breakpoint(768){
+                padding: 0px 20px;
+            }
         }
         .contact-menu-andean{
             display: flex;
@@ -27,15 +41,79 @@
             -webkit-align-items: center;
             -ms-flex-align: center;
             align-items: center;
-            font-size: 12px;
+            font-size: $contactFont;
             margin-top: 25px;
             text-transform: none;
             text-align: right;
         }
+            .andean-search{
+                margin: $mgAltoBajo;
+            }
+                .andean-nav-search-button{
+                    float: right;
+                    background-color: #fc0;
+                    padding-left: 3.125rem;
+                    padding-right: 3.125rem;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                }
+                    .btn-andean{
+                        color: black;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        font-family: $fontButtons;
+                        font-weight: 600;
+                        font-size: 13px;
+                    }
+                .andean-nav-search-input{
+                    position: $pRel;
+                    float: right;
+                    width: 50%;
+                    margin-right: 20px;
+                }
+                    input[type="text"]{
+                        font-family: 'GeoEditRegular', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+                        -moz-osx-font-smoothing: grayscale;
+                        -webkit-font-smoothing: antialiased;
+                        font-weight: 400;
+                        letter-spacing: 0;
+                        letter-spacing: .1px;
+                        font-size: 14px;
+                        line-height: 1.429;
+                        background: #fff;
+                        height: auto;
+                        padding: 15px;
+                        width: 100%;
+                        padding-left: 14px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 5px;
+                        &:focus{
+                            outline: #444 solid .5px;
+                            border-radius: 5px;
+                        }
+                    }
+                    .icon-search{
+                    position: $pAbs;
+                    top: 14px;
+                    right: 15px;
+                    color: #ccc;
+                    font-size: 1.5rem;
+                    z-index: 2;
+                    }
             .pdleft{
                 padding-left: $pdleft;
+                color: #000;
+                text-decoration: none;
+                transition: .2s;
+                &:hover{
+                    color: #999;
+                }
             }
+           
+                .icons-andean{
+                    margin-right: $iconsM;
+                    font-size: $iconsS;
+                }
 
-    }
-    
+    }    
 }

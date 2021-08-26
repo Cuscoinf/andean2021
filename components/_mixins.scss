@@ -26,3 +26,14 @@ $map-grid-props: ('-sm': 0, '-md': $grid-md, '-lg': $grid-lg);
 @each $modifier , $breakpoint in $map-grid-props {
     @include create-col-classes($modifier, $grid-col, $breakpoint);
   }
+/*********************
+RESPONSIVE BREAKPOINT
+**********************/
+@mixin breakpoint($point) {
+  @if $point == 768 {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == another-break-point {
+    @media (max-width: 0) { @content; }
+  }
+}
