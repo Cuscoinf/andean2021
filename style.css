@@ -21,6 +21,12 @@ a:hover {
   max-width: 100%;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -641,11 +647,17 @@ article {
 }
 
 .team-name {
-  font-size: 36px;
-  display: table;
-  margin: auto;
+  font-family: "GeoBrandBold", "CenturyGothic", AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  text-transform: uppercase;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 3px;
+  line-height: 1.273;
+  margin-bottom: 20px;
+  position: relative;
   text-align: center;
-  font-weight: 100;
 }
 
 .team-name:after {
@@ -772,4 +784,114 @@ article {
 .map-home .slider-map .arrow-right {
   margin-right: 20%;
   margin-left: 20px;
+}
+
+.title-home {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 100;
+  position: relative;
+  padding: 0 2.5rem;
+}
+
+.title-home::before {
+  background-color: #0066b0;
+  content: "";
+  height: 0.0625rem;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 1;
+}
+
+.travel-styles {
+  justify-content: center;
+  margin-top: 2rem;
+}
+.travel-styles .inner {
+  margin: 0px 15px;
+  width: 85%;
+  position: relative;
+  overflow: hidden;
+}
+.travel-styles .inner a {
+  text-align: center;
+}
+.travel-styles .inner a img {
+  width: 100%;
+  transition: 0.5s;
+}
+.travel-styles .inner a .visual-text {
+  color: #fff;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: bold;
+  height: 100%;
+  left: 0;
+  letter-spacing: 0.06625rem;
+  line-height: 1.25rem;
+  padding: 0 0.9375rem;
+  position: absolute;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0.0625rem 0.0625rem;
+  top: 50%;
+  width: 100%;
+  z-index: 3;
+}
+.travel-styles .inner:hover img {
+  transform: scale(1.15);
+}
+
+.blog-andean .noticias > div:first-child {
+  grid-column: 1/span 2;
+}
+
+.blog-andean .noticias > div:nth-child(6n) {
+  grid-column: 3/span 2;
+}
+
+.blog-andean .noticias {
+  display: grid;
+  grid-template-columns: 22.9% 22.9% 22.9% 22.9%;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+.blog-andean .paragraph {
+  font-size: 15px;
+  max-width: 510px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+}
+
+.noticias > div {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.noticias > div .texto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  height: 170px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #090909 100%);
+  color: white;
+  padding: 35px 25px;
+  display: grid;
+  align-items: end;
+}
+.noticias > div .texto h4 {
+  font-size: 14px;
+  font-weight: 100;
+}
+.noticias > div .texto h4 span {
+  font-size: 20px;
+  display: block;
+  font-weight: 600;
 }
