@@ -29,4 +29,28 @@ a{
 .mgTop-20{
     margin-top: 20px;
 }
-
+/*COMOBOBOX*/
+select {
+    position: relative;
+    background: #fff;
+    background-image: none;
+    display: block;
+    width: 100%;
+    outline: none;
+    color: #888888;
+    cursor: pointer;
+    z-index: 2;
+    border: none;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-top: 1.4em;
+    padding-bottom: 1.3em;
+    text-indent: 5px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 15px 0 10px;
+}

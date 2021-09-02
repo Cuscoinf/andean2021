@@ -1,3 +1,26 @@
+.slider-andean{
+    position:relative;
+}
+    .search-andean-slider{
+        position: absolute;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+        .input{
+            position: relative;
+        }
+        .icon-search-slider{
+            font-size: 33px;
+            z-index: 4;
+            position: absolute;
+            background: #fc0;
+            top: 0;
+            right: 0;
+            padding: 6px;
+        }
 .image-slider img{
     margin-top: -55px;
     width: 100%;
@@ -13,3 +36,21 @@
         margin-top: -65px;
     }
 }
+.search-input-search{
+
+    background-color: #fc0;
+    padding-left: 2.125rem;
+    padding-right: 2.125rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+    .btn-andean{
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: $fontButtons;
+        font-weight: 600;
+        font-size: 13px;
+    }

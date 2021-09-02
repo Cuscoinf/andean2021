@@ -1,0 +1,160 @@
+article{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+    .paragraph{
+        margin: 10px auto;
+        line-height: 1.6;
+        text-align: center;
+        color: #797979;
+        width: 100%;
+    }
+.space-andean{
+    margin-top: $mgTop-20+10;
+}
+    .team-andean{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 85%;
+        margin: 15px auto;
+    }
+    .team-name{
+        font-size: $fontSizeTitle;
+        display: table;
+        margin: auto;
+        text-align: center;
+        font-weight: 100;
+    }
+    .team-name:after {
+        max-width: 200px;
+        height: 2px;
+        display: block;
+        background-color: #fc0;
+        margin: 15px auto 20px;
+        content: "";
+        width: 50%;
+    }
+    .icons-presentation-andean{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 auto;
+        .col-md-3{
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 120px;
+            text-align: center;
+            position: relative;
+            article{
+                position: absolute;
+                bottom: 10px;
+                z-index: 2;
+                background-color: #fff;
+                left: 0;
+                &:hover .paragraph{
+                    max-height: 500px;
+                }
+                .paragraph{
+                    line-height: 1.6;
+                    max-height: 45px;
+                    overflow-y: hidden;
+                    -webkit-transition: all 1.5s linear;
+                    -moz-transition: all 1.5s linear;
+                    -o-transition: all 1.5s linear;
+                    -ms-transition: all 1.5s linear;
+                    transition: all 1.5s linear;
+                }
+            }
+                
+        }
+            
+    }
+.map-home{
+    width: 100%;
+    position: $pRel;
+    img{
+        width: 100%;
+    }
+    .slider-map{
+        width: 30%;
+        height: 70%;
+        min-height: 550px;
+        position: absolute;
+        top: 42px;
+        left: 5%;
+        z-index: 4;
+        background-color: #fff;
+        .item
+            article{
+                text-align: center;
+                width: 100%;
+                h3{
+                    font-size: 21px;
+                    text-transform: uppercase;
+                    color: $backgroundNav;
+                    a{
+                        color: $backgroundNav;
+                        &:hover{
+                            color: $backgroundPrincipal;
+                        }
+                    }
+                }
+                h4{
+                    font-size: 26px;
+                    font-weight: 100;
+                }
+            }
+            a{
+                text-align: center;
+                display: block;
+                transition: .3s;
+                &:hover{
+                    color: #fc0;;
+                }
+            }
+            .discover-more{
+                font-size: 14px;
+                margin-top: 30px;
+                color: #000;
+            }
+            .discover-more:after {
+                max-width: 100px;
+                height: 1px;
+                display: block;
+                background-color: #fc0;
+                margin: 15px auto 20px;
+                content: "";
+                width: 90%;
+            }
+        .nav-arrows{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            height: 40px;
+            z-index: 2;
+            bottom: 10px;
+            color: #888888;
+        }
+            .arrow-left, .arrow-right{
+                border: none;
+                background: transparent;
+                font-size: 28px;
+                color: #888888;
+            }
+            .arrow-left{
+                margin-left: 20%;
+                margin-right: 20px;
+            }
+            .arrow-right{
+                margin-right: 20%;
+                margin-left: 20px;
+            }
+    }
+}
+        
