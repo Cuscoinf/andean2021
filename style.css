@@ -25,12 +25,26 @@ a:hover {
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
+  display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  footer .container {
+    display: block;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+.block {
+  display: block;
 }
 
 .pdlados-40 {
@@ -569,9 +583,31 @@ MOBILE NAV STYLES
   align-items: center;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .search-andean-slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background: #000;
+    margin-top: -4px;
+  }
+}
 
 .input {
   position: relative;
+}
+@media (max-width: 768px) {
+  .input {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-input-search {
+    margin-left: 0rem !important;
+    text-align: center;
+  }
 }
 
 .icon-search-slider {
@@ -596,8 +632,8 @@ MOBILE NAV STYLES
 }
 @media (max-width: 768px) {
   .image-slider img {
-    width: auto;
     margin-top: -65px;
+    min-height: 400px;
   }
 }
 
@@ -702,6 +738,11 @@ article {
   transition: all 1.5s linear;
 }
 
+@media (max-width: 768px) {
+  .map-home > img {
+    display: none;
+  }
+}
 .map-home {
   width: 100%;
   position: relative;
@@ -718,6 +759,15 @@ article {
   left: 5%;
   z-index: 4;
   background-color: #fff;
+}
+@media (max-width: 768px) {
+  .map-home .slider-map {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height: auto;
+    top: 0px;
+  }
 }
 .map-home .slider-map .item article {
   text-align: center;
@@ -751,6 +801,11 @@ article {
   margin-top: 30px;
   color: #000;
 }
+@media (max-width: 768px) {
+  .map-home .slider-map .discover-more {
+    margin-top: 60px;
+  }
+}
 .map-home .slider-map .discover-more:after {
   max-width: 100px;
   height: 1px;
@@ -770,6 +825,11 @@ article {
   z-index: 2;
   bottom: 10px;
   color: #888888;
+}
+@media (max-width: 768px) {
+  .map-home .slider-map .nav-arrows {
+    bottom: 40px;
+  }
 }
 .map-home .slider-map .arrow-left, .map-home .slider-map .arrow-right {
   border: none;
@@ -845,16 +905,35 @@ article {
 .blog-andean .noticias > div:first-child {
   grid-column: 1/span 2;
 }
+@media (max-width: 768px) {
+  .blog-andean .noticias > div:first-child {
+    grid-column: initial;
+  }
+}
 
 .blog-andean .noticias > div:nth-child(6n) {
   grid-column: 3/span 2;
 }
+@media (max-width: 768px) {
+  .blog-andean .noticias > div:nth-child(6n) {
+    grid-column: initial;
+  }
+}
 
+.blog-andean {
+  display: block;
+}
 .blog-andean .noticias {
   display: grid;
   grid-template-columns: 22.9% 22.9% 22.9% 22.9%;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
+}
+@media (max-width: 768px) {
+  .blog-andean .noticias {
+    grid-template-columns: 100%;
+    grid-column-gap: 2%;
+  }
 }
 .blog-andean .paragraph {
   font-size: 15px;
@@ -886,6 +965,11 @@ article {
   display: grid;
   align-items: end;
 }
+@media (max-width: 768px) {
+  .noticias > div .texto {
+    padding: 0px 25px;
+  }
+}
 .noticias > div .texto h4 {
   font-size: 14px;
   font-weight: 100;
@@ -894,4 +978,93 @@ article {
   font-size: 20px;
   display: block;
   font-weight: 600;
+}
+
+footer {
+  background: #29373E;
+  padding: 60px 0;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: left;
+}
+
+.footer-content {
+  padding: 10px 20px;
+}
+.footer-content img {
+  margin-bottom: 25px;
+}
+.footer-content span, .footer-content ul li {
+  font-size: 14px;
+  color: #868E91;
+  margin-bottom: 7px;
+  position: relative;
+  text-align: left;
+  list-style: none;
+}
+.footer-content i {
+  margin-right: 10px;
+  line-height: 25px;
+}
+
+.footer-name {
+  font-family: "GeoBrandBold", "CenturyGothic", AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  text-transform: uppercase;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 3px;
+  line-height: 1.273;
+  position: relative;
+  text-align: left;
+  margin: 0;
+}
+
+.footer-name:after {
+  max-width: 200px;
+  height: 2px;
+  display: block;
+  background-color: #fc0;
+  margin: 15px 0px;
+  content: "";
+  width: 100%;
+}
+
+.andean-nav-search-input {
+  position: relative;
+  float: right;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+input[type=text] {
+  font-family: "GeoEditRegular", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  letter-spacing: 0;
+  letter-spacing: 0.1px;
+  font-size: 14px;
+  line-height: 1.429;
+  background: #fff;
+  height: auto;
+  padding: 10px;
+  width: 100%;
+  padding-left: 14px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+input[type=text]:focus {
+  outline: #444 solid 0.5px;
+  border-radius: 5px;
+}
+
+.icon-search {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  color: #ccc;
+  font-size: 1.5rem !important;
+  z-index: 2;
 }

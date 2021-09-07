@@ -1,0 +1,81 @@
+footer{
+    background: #29373E;
+    padding: 60px 0;
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+    text-align: left;
+}.footer-content{
+    padding: $pdbajo;
+    img{
+        margin-bottom: 25px;
+    }
+    span, ul li{
+            font-size: 14px;
+            color: #868E91;
+            margin-bottom: 7px;
+            position: relative;
+            text-align: left;
+            list-style: none;
+        }
+        i{
+            margin-right: 10px;
+            line-height: 25px;
+        }
+}
+.footer-name {
+    font-family: "GeoBrandBold", "CenturyGothic", AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+    text-transform: uppercase;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 1.273;
+    position: relative;
+    text-align: left;
+    margin: 0;
+}
+.footer-name:after {
+    max-width: 200px;
+    height: 2px;
+    display: block;
+    background-color: #fc0;
+    margin: 15px 0px;
+    content: "";
+    width: 100%;
+}
+.andean-nav-search-input{
+    position: $pRel;
+    float: right;
+    width: 100%;
+    margin: 10px 0px;
+}
+    input[type="text"]{
+        font-family: 'GeoEditRegular', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        letter-spacing: 0;
+        letter-spacing: .1px;
+        font-size: 14px;
+        line-height: 1.429;
+        background: #fff;
+        height: auto;
+        padding: 10px;
+        width: 100%;
+        padding-left: 14px;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        &:focus{
+            outline: #444 solid .5px;
+            border-radius: 5px;
+        }
+    }
+    .icon-search{
+    position: $pAbs;
+    top: -5px;
+    right: 5px;
+    color: #ccc;
+    font-size: 1.5rem !important;
+    z-index: 2;
+    }

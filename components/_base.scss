@@ -22,12 +22,25 @@ a{
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+    footer .container{
+        display: block;
+    }
 }
 .row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
+
+.grid{
+    display: grid;
+}
+.block{
+    display: block;
+}
 .pdlados-40{
     padding: 0px 40px;
 }

@@ -79,6 +79,11 @@ article{
         }
             
     }
+@include breakpoint(768){
+    .map-home>img {
+        display: none;
+    }
+}
 .map-home{
     width: 100%;
     position: $pRel;
@@ -94,6 +99,13 @@ article{
         left: 5%;
         z-index: 4;
         background-color: #fff;
+        @include breakpoint (768){
+            width: 90%;
+            position: relative;
+            left: 5%;
+            height: auto;
+            top: 0px;
+        }
         .item
             article{
                 text-align: center;
@@ -126,6 +138,9 @@ article{
                 font-size: 14px;
                 margin-top: 30px;
                 color: #000;
+                @include breakpoint (768){
+                    margin-top: 60px;
+                }
             }
             .discover-more:after {
                 max-width: 100px;
@@ -146,6 +161,9 @@ article{
             z-index: 2;
             bottom: 10px;
             color: #888888;
+            @include breakpoint (768){
+                bottom: 40px;
+            }
         }
             .arrow-left, .arrow-right{
                 border: none;
@@ -219,16 +237,27 @@ article{
 }
 .blog-andean .noticias > div:first-child {
     grid-column: 1 / span 2;
+    @include breakpoint(768){
+        grid-column: initial;
+    }
 }
 .blog-andean .noticias > div:nth-child(6n) {
     grid-column: 3 / span 2;
+    @include breakpoint(768){
+        grid-column: initial;
+    }
 }
 .blog-andean{
+        display: block;
     .noticias{
     display: grid;
     grid-template-columns: 22.9% 22.9% 22.9% 22.9%;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
+    @include breakpoint(768){
+        grid-template-columns: 100%;
+        grid-column-gap: 2%;
+    }
     }
     .paragraph{
         font-size: 15px;
@@ -258,6 +287,9 @@ article{
         padding: 35px 25px;
         display: grid;
         align-items: end;
+        @include breakpoint(768){
+            padding: 0px 25px;
+        }
         h4 {
             font-size: 14px;
             font-weight: 100;
