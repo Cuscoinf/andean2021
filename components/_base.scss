@@ -8,10 +8,14 @@ body{
 }
 
 a{
+    cursor: pointer;
     text-decoration: none;
     &:hover{
         text-decoration: none;
     }
+}
+li{
+    list-style: none;
 }
 /*DEFINIR CONTENEDORES*/
 .fluid {

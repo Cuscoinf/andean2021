@@ -1,0 +1,121 @@
+.slider-single-tour{
+    .img-tour{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    position: $pRel;
+    }
+    ::before{
+        content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    }
+}
+.trip-details-bar-post{
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    background: $backgroundNav;
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 40px;
+}
+.trip-details-bar-post .border-left{
+    border-left: 1px solid #f6f6f6;
+}
+.trip-details-text{
+    font-family: 'GeoBrandRegular', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+    text-transform: uppercase;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    text-align: center;
+}
+.trip-details-text{
+    display: flex;
+    justify-content: center;
+}
+.trip-details-text i{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.trip-details-text span{
+    vertical-align: middle;
+}
+.tour-callText, .title-details{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    letter-spacing: 0;
+    letter-spacing: .1px;
+    font-size: 15px;
+    line-height: 1.429;
+    color: #a4a4a4;
+    text-align: center;
+    text-transform: none;
+    display: block;
+}
+.tour-callText{
+    margin-top: 4px;
+}
+.title-details{
+    margin-bottom: 7px;
+}
+.bg-content-menu{
+    background-color: #fff;
+    top: 0;
+    border-bottom: 1px solid #eee;
+}
+.titles-content{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        li{
+            a{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-transform: uppercase;
+                font-weight: 500;
+                display: inline-flex;
+                align-items: center;
+                padding-right: 20px;
+                padding-left: 20px;
+                transition: .5s;
+                &:hover{
+                    color: #fc0;
+                }
+                i{
+                    font-size: 1.75rem;
+                    margin-right: .5rem;
+                    color: #fc0;
+                }
+            }
+        }
+    }
+}
+.container-content{
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}

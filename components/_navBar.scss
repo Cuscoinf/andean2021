@@ -84,7 +84,8 @@ nav ul {
     &:hover ul {
       opacity:1;
       max-height:1000px;
-      transition: transition-duration(0.3s);
+      transition: 0.5s;
+      z-index: 999;
       
       @include breakpoint(768) {
         max-height:0;
