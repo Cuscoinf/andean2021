@@ -1,19 +1,133 @@
+.img-title-tour{
+    position: $pRel;
+}
 .slider-single-tour{
     .img-tour{
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    position: $pRel;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        position: $pRel;
     }
     ::before{
         content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+.tour-text{
+    bottom: 40px;
+    max-width: calc(55% - 52px);
     position: absolute;
+    left: 100px;
+    padding: 0;
+    z-index: 8;
+    color: $backgroundSecundario;
+}
+.tour-title{
+    font-family: 'GeoEditBold', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: .5px;
+    line-height: 1.08333333333;
+    margin: 0;
+
+}
+.location-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location-list>div{
+    font-size: 20px;
+    color: #fc0;
+}
+.wrap-tooltip>div{
+    font-size: 36px !important;
+    margin: 5px 10px;
+}
+.wrap-tooltip div a{
+    color:#c3bdbd;
+    transition: .5s;
+}
+.wrap-tooltip div a:hover{
+    color:#fc0;
+}
+.location-list>a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    border-right: 1px solid #fc0;
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+}
+.gallery-itinerary{
+    display: flex;
+}
+.gallery-itinerary div a img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gallery-itinerary div{
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-itinerary div a {
+    position: relative;
+    cursor: pointer;
+}
+.gallery-itinerary div a .box-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: .5s;
+    &:hover{
+        background-color: transparent;
+    }
+    h3{
+        font-size: 11px;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        &::after{
+            max-width: 200px;
+            height: 1px;
+            display: block;
+            background-color: #fc0;
+            margin: 3px auto;
+            content: "";
+        }
+    }
+    p{
+        color: #fff;
     }
 }
 .trip-details-bar-post{
@@ -79,10 +193,17 @@
 .title-details{
     margin-bottom: 7px;
 }
+.itinerary-content{
+    position: $pRel;
+    opacity: 0;
+    transition: all 0.85s linear;
+}
 .bg-content-menu{
     background-color: #fff;
     top: 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;position: fixed;
+    width: 100%;
+    z-index: 9;
 }
 .titles-content{
     ul{
@@ -118,4 +239,7 @@
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
+}
+.scroll_div{
+    height: 60px;
 }

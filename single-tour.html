@@ -13,6 +13,19 @@
 <body>
     <header>
         <div class="header">
+            <div class="itinerary-content" id="itinerary-content">
+                <div class="bg-content-menu">
+                    <div class="titles-content container">
+                        <ul>
+                            <li><a onclick="scroll_to_div('hightlight')" class="scroll_button"><i class="far fa-newspaper icon-content"></i>HIGHLIGHTS</a></li>
+                            <li><a onclick="scroll_to_div('itinerary')" class="scroll_button"><i class="far fa-map icon-content"></i>TOUR MAP & ITINERARY</a></li>
+                            <li><a onclick="scroll_to_div('tours')" class="scroll_button"><i class="far fa-question-circle icon-content"></i>TOURS EXPERIENCES</a></li>
+                            <li><a onclick="scroll_to_div('inclusions')" class="scroll_button"><i class="fas fa-check icon-content"></i>INCLUSIONS</a></li>
+                            <li><a onclick="scroll_to_div('choice-package')" class="scroll_button"><i class="fas fa-percent icon-content"></i>CHOSE YOUR PACKAGE</a></li>
+                        </ul>
+                    </div>      
+                </div>
+            </div>
             <section class="headear-andean" style="width: 100%;">
                 <div class="banner-andean background-principal">
                     <div class="container">
@@ -95,9 +108,15 @@
         </section>
     </header>
     <section>
-        <section class="slider-single-tour">
-            <div class="img-tour" style="background-image: url('https://www.venturia.com.pe/wp-content/uploads/2020/03/llama-trek-Banner.jpg');"></div>
-        </section>
+        <section class="img-title-tour">
+            <div class="tour-text">
+                <h1 class="tour-title">Africa by Private Jet</h1>
+            </div>
+            <div class="slider-single-tour" >
+                <div class="img-tour" style="background-image: url('https://www.venturia.com.pe/wp-content/uploads/2020/03/llama-trek-Banner.jpg');">
+                </div>
+            </div>
+        </section> 
         <section class="tourDetails">
             <div class="trip-details-bar-post col-md-12">
 				<div class="trip-details-resum col-md-2"><span class="title-details">Price Tour</span>
@@ -156,57 +175,80 @@
 			</div>
         </section>
         <section class="tour-content">
-            <div id="resum-tour" class="resum-tour">
-                <div class="bg-content-menu">
-                    <div class="titles-content container">
-                        <ul>
-                            <li><a onclick="scroll_to_div('hightlight')" class="scroll_button"><i class="far fa-newspaper icon-content"></i>HIGHLIGHTS</a></li>
-                            <li><a onclick="scroll_to_div('itinerary')" class="scroll_button"><i class="far fa-map icon-content"></i>TOUR MAP & ITINERARY</a></li>
-                            <li><a onclick="scroll_to_div('tours')" class="scroll_button"><i class="far fa-question-circle icon-content"></i>TOURS EXPERIENCES</a></li>
-                            <li><a onclick="scroll_to_div('inclusions')" class="scroll_button"><i class="fas fa-check icon-content"></i>INCLUSIONS</a></li>
-                            <li><a onclick="scroll_to_div('choice-package')" class="scroll_button"><i class="fas fa-percent icon-content"></i>CHOSE YOUR PACKAGE</a></li>
-                        </ul>
-                    </div>      
+            <div class="container-block">
+                <div class="location-list mgTop-50">
+                   <div><i class="fas fa-globe-americas"></i></div>
+                    <a href="https://www.asiatours.com/Manila/" target="_blank" title="Manila">Manila</a>
+                    <a href="https://www.asiatours.com/Coron/" target="_blank" title="Coron">Coron</a>
+                    <a href="https://www.asiatours.com/El-Nido/" target="_blank" title="El Nido">El Nido</a>
+                    <a href="https://www.asiatours.com/Boracay/" target="_blank" title="Boracay">Boracay</a>
                 </div>
+                <div class="gallery-itinerary mgTop-50">
+                    <div class="col-md-3">
+                        <a href="javascript:" class="btn-modal-tour" tabindex="0">
+                            <img src="https://d2lwt6tidfiof0.cloudfront.net/uploads/googlemap/manila-920-559-300.jpg">
+                            <div class="box-text">
+                            <h3 class="line" data-content="Manila">Manila - Luzon</h3>
+                            <p>3 Days</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="javascript:" class="btn-modal-tour" tabindex="0">
+                            <img src="https://d2lwt6tidfiof0.cloudfront.net/uploads/googlemap/coron-331-559-300.jpg">
+                            <div class="box-text">
+                            <h3 class="line" data-content="Manila">Manila - Luzon</h3>
+                            <p>3 Days</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="javascript:" class="btn-modal-tour" tabindex="0">
+                            <img src="https://d2lwt6tidfiof0.cloudfront.net/uploads/googlemap/el-nido-111-559-300.jpg">
+                            <div class="box-text">
+                            <h3 class="line" data-content="Manila">Manila - Luzon</h3>
+                            <p>3 Days</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="javascript:" class="btn-modal-tour" tabindex="0">
+                            <img src="https://d2lwt6tidfiof0.cloudfront.net/uploads/googlemap/boracay-597-559-300.jpg">
+                            <div class="box-text">
+                            <h3 class="line" data-content="Manila">Manila - Luzon</h3>
+                            <p>3 Days</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="location-list wrap-tooltip mgTop-50">
+                   <div><a href="#"><i class="fas fa-swimming-pool"></i></a></div>
+                   <div><a href="#"><i class="fas fa-ship"></i></a></div>
+                   <div><a href="#"><i class="far fa-flag"></i></a></div>
+                   <div><a href="#"><i class="fab fa-pagelines"></i></a></div>
+                   <div><a href="#"><i class="fas fa-utensils"></i></a></div>
+                   <div><a href="#"><i class="fas fa-shoe-prints"></i></a></div>
+                    <div><a href="#"><i class="fas fa-umbrella-beach"></i></a></div>
+                </div>
+            </div>
+            <div id="resum-tour" class="resum-tour">
                 <div class="container-content">
-                    <div id="hightlight" class="scroll_div">
-                        <h3 class="team-name line">BLOG</h3>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                    </div>              
-                    <div id="itinerary" class="scroll_div">
-                        <h3 class="team-name line">BLOG</h3>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                    </div>
-                    <div id="tours" class="scroll_div">
-                        <h3 class="team-name line">BLOG</h3>
+                    <div id="hightlight" class="scroll_div"></div>              
+                    <h3 class="team-name line">BLOG</h3>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <div id="itinerary" class="scroll_div"></div>
+                    <h3 class="team-name line">BLOG</h3>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
@@ -222,22 +264,39 @@
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                    </div>
-                    <div id="inclusions" class="scroll_div">
-                        <h3 class="team-name line">BLOG</h3>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <div id="tours" class="scroll_div"></div>
+                    <h3 class="team-name line">BLOG</h3>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                    </div>
-                    <div id="choice-package" class="scroll_div">
-                        <h3 class="team-name line">BLOG</h3>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                         <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
-                    </div>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <div id="inclusions" class="scroll_div"></div>
+                    <h3 class="team-name line">BLOG</h3>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                    <div id="choice-package" class="scroll_div"></div>
+                    <h3 class="team-name line">BLOG</h3>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
+                        <span class="paragraph">Lee nuestro blog para conocer las últimas noticias de viajes, reportajes y emocionantes perspectivas sobre los mejores destinos de Perú, tesoros escondidos, actividades interesantes y mucho más.</span>
                 </div>      
             </div>
         </section>
@@ -324,6 +383,16 @@
         },
         'slow');
         }
+        //EJECUCION DE MOSTRAR Y OCULTAR TABS
+        var element = document.getElementById("itinerary-content");
+        //Update DOM on scroll
+        document.addEventListener("scroll", function() { 
+            var scrollAmt = window.pageYOffset || document.documentElement.scrollTop
+            if(window.innerHeight/2 >= scrollAmt)
+                element.style.opacity = "0"; 
+        else	
+                element.style.opacity = "1";
+        });
     </script>
 </body>
 </html>

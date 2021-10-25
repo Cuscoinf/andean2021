@@ -60,6 +60,10 @@ li {
   margin-top: 20px;
 }
 
+.mgTop-50 {
+  margin-top: 50px;
+}
+
 /*COMOBOBOX*/
 select {
   position: relative;
@@ -87,150 +91,192 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px 0 10px;
 }
 
+.container-block {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .col-sm-1 {
   flex-basis: 8.3333333333%;
+  width: 8.3333333333%;
 }
 
 .col-sm-2 {
   flex-basis: 16.6666666667%;
+  width: 16.6666666667%;
 }
 
 .col-sm-3 {
   flex-basis: 25%;
+  width: 25%;
 }
 
 .col-sm-4 {
   flex-basis: 33.3333333333%;
+  width: 33.3333333333%;
 }
 
 .col-sm-5 {
   flex-basis: 41.6666666667%;
+  width: 41.6666666667%;
 }
 
 .col-sm-6 {
   flex-basis: 50%;
+  width: 50%;
 }
 
 .col-sm-7 {
   flex-basis: 58.3333333333%;
+  width: 58.3333333333%;
 }
 
 .col-sm-8 {
   flex-basis: 66.6666666667%;
+  width: 66.6666666667%;
 }
 
 .col-sm-9 {
   flex-basis: 75%;
+  width: 75%;
 }
 
 .col-sm-10 {
   flex-basis: 83.3333333333%;
+  width: 83.3333333333%;
 }
 
 .col-sm-11 {
   flex-basis: 91.6666666667%;
+  width: 91.6666666667%;
 }
 
 .col-sm-12 {
   flex-basis: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .col-md-1 {
     flex-basis: 8.3333333333%;
+    width: 8.3333333333%;
   }
 
   .col-md-2 {
     flex-basis: 16.6666666667%;
+    width: 16.6666666667%;
   }
 
   .col-md-3 {
     flex-basis: 25%;
+    width: 25%;
   }
 
   .col-md-4 {
     flex-basis: 33.3333333333%;
+    width: 33.3333333333%;
   }
 
   .col-md-5 {
     flex-basis: 41.6666666667%;
+    width: 41.6666666667%;
   }
 
   .col-md-6 {
     flex-basis: 50%;
+    width: 50%;
   }
 
   .col-md-7 {
     flex-basis: 58.3333333333%;
+    width: 58.3333333333%;
   }
 
   .col-md-8 {
     flex-basis: 66.6666666667%;
+    width: 66.6666666667%;
   }
 
   .col-md-9 {
     flex-basis: 75%;
+    width: 75%;
   }
 
   .col-md-10 {
     flex-basis: 83.3333333333%;
+    width: 83.3333333333%;
   }
 
   .col-md-11 {
     flex-basis: 91.6666666667%;
+    width: 91.6666666667%;
   }
 
   .col-md-12 {
     flex-basis: 100%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
   .col-lg-1 {
     flex-basis: 8.3333333333%;
+    width: 8.3333333333%;
   }
 
   .col-lg-2 {
     flex-basis: 16.6666666667%;
+    width: 16.6666666667%;
   }
 
   .col-lg-3 {
     flex-basis: 25%;
+    width: 25%;
   }
 
   .col-lg-4 {
     flex-basis: 33.3333333333%;
+    width: 33.3333333333%;
   }
 
   .col-lg-5 {
     flex-basis: 41.6666666667%;
+    width: 41.6666666667%;
   }
 
   .col-lg-6 {
     flex-basis: 50%;
+    width: 50%;
   }
 
   .col-lg-7 {
     flex-basis: 58.3333333333%;
+    width: 58.3333333333%;
   }
 
   .col-lg-8 {
     flex-basis: 66.6666666667%;
+    width: 66.6666666667%;
   }
 
   .col-lg-9 {
     flex-basis: 75%;
+    width: 75%;
   }
 
   .col-lg-10 {
     flex-basis: 83.3333333333%;
+    width: 83.3333333333%;
   }
 
   .col-lg-11 {
     flex-basis: 91.6666666667%;
+    width: 91.6666666667%;
   }
 
   .col-lg-12 {
     flex-basis: 100%;
+    width: 100%;
   }
 }
 /*********************
@@ -1075,6 +1121,10 @@ input[type=text]:focus {
   z-index: 2;
 }
 
+.img-title-tour {
+  position: relative;
+}
+
 .slider-single-tour .img-tour {
   height: 100vh;
   background-repeat: no-repeat;
@@ -1090,6 +1140,126 @@ input[type=text]:focus {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.2);
+}
+
+.tour-text {
+  bottom: 40px;
+  max-width: calc(55% - 52px);
+  position: absolute;
+  left: 100px;
+  padding: 0;
+  z-index: 8;
+  color: white;
+}
+
+.tour-title {
+  font-family: "GeoEditBold", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  line-height: 1.0833333333;
+  margin: 0;
+}
+
+.location-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-list > div {
+  font-size: 20px;
+  color: #fc0;
+}
+
+.wrap-tooltip > div {
+  font-size: 36px !important;
+  margin: 5px 10px;
+}
+
+.wrap-tooltip div a {
+  color: #c3bdbd;
+  transition: 0.5s;
+}
+
+.wrap-tooltip div a:hover {
+  color: #fc0;
+}
+
+.location-list > a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  border-right: 1px solid #fc0;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+}
+
+.gallery-itinerary {
+  display: flex;
+}
+
+.gallery-itinerary div a img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-itinerary div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-itinerary div a {
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-itinerary div a .box-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s linear;
+  border-radius: 10px;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.gallery-itinerary div a .box-text:hover {
+  background-color: transparent;
+}
+.gallery-itinerary div a .box-text h3 {
+  font-size: 11px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.gallery-itinerary div a .box-text h3::after {
+  max-width: 200px;
+  height: 1px;
+  display: block;
+  background-color: #fc0;
+  margin: 3px auto;
+  content: "";
+}
+.gallery-itinerary div a .box-text p {
+  color: #fff;
 }
 
 .trip-details-bar-post {
@@ -1160,10 +1330,19 @@ input[type=text]:focus {
   margin-bottom: 7px;
 }
 
+.itinerary-content {
+  position: relative;
+  opacity: 0;
+  transition: all 0.85s linear;
+}
+
 .bg-content-menu {
   background-color: #fff;
   top: 0;
   border-bottom: 1px solid #eee;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
 }
 
 .titles-content ul {
@@ -1197,4 +1376,8 @@ input[type=text]:focus {
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
+}
+
+.scroll_div {
+  height: 60px;
 }
